@@ -17,10 +17,10 @@ const Todo = (props) => {
     <div>
    {
     data && data?.map((item,index)=>(
-        <div  key={index} id='container'>
+        <ul  key={index} id='container'>
           <p>{item.input}</p>
          <button onClick={()=>{handleclick(item.id)}}  id='btn'>Delete</button>
-        </div>
+        </ul>
     ))
    }
 
