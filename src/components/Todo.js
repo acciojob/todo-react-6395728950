@@ -17,9 +17,11 @@ const Todo = (props) => {
     <div>
    {
     data && data?.map((item,index)=>(
-        <ul  key={index} id='container'>
+        <ul>
+          <li key={index} id='container'>
           <p>{item.input}</p>
          <button onClick={()=>{handleclick(item.id)}}  id='btn'>Delete</button>
+         </li>
         </ul>
     ))
    }
